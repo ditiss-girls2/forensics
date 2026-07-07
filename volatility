@@ -1,0 +1,7 @@
+python3 vol.py -f C:\Users\PG-ITISS\Downloads\analyse\analyse.mem windows.info > os_info.txt
+python vol.py -f C:\Users\PG-ITISS\Downloads\analyse\analyse.mem windows.pslist
+python vol.py -f C:\Users\PG-ITISS\Downloads\analyse\analyse.mem windows.pslist > pslist_report.txt
+python vol.py -f C:\Users\PG-ITISS\Downloads\analyse\analyse.mem windows.netscan
+python vol.py -f C:\Users\PG-ITISS\Downloads\analyse\analyse.mem windows.psscan
+python vol.py -f C:\Users\PG-ITISS\Downloads\analyse\analyse.mem windows.pstree > 4_pstree.txt
+python vol.py -f C:\Users\PG-ITISS\Downloads\analyse\analyse.mem windows.psscan > 5_psscan.txt
