@@ -1,0 +1,234 @@
+FILE TYPES
+
+.pcap
+.pcapng
+
+===========================================================
+
+OPEN PCAP
+
+Wireshark
+
+↓
+
+File
+
+↓
+
+Open
+
+↓
+
+sample.pcap
+
+===========================================================
+
+SCREEN
+
+Packet List
+
+↓
+
+Packet Details
+
+↓
+
+Packet Bytes
+
+===========================================================
+
+MOST IMPORTANT FILTERS
+
+http
+
+HTTPS
+
+tls
+
+DNS
+
+dns
+
+FTP
+
+ftp
+
+TCP
+
+tcp
+
+UDP
+
+udp
+
+ICMP
+
+icmp
+
+ARP
+
+arp
+
+SMTP
+
+smtp
+
+POP3
+
+pop
+
+IMAP
+
+imap
+
+===========================================================
+
+IP FILTERS
+
+Source IP
+
+ip.src==192.168.1.10
+
+------------------------------------
+
+Destination IP
+
+ip.dst==192.168.1.20
+
+------------------------------------
+
+Both
+
+ip.addr==192.168.1.10
+
+===========================================================
+
+PORT FILTERS
+
+HTTP
+
+tcp.port==80
+
+HTTPS
+
+tcp.port==443
+
+DNS
+
+udp.port==53
+
+FTP
+
+tcp.port==21
+
+SSH
+
+tcp.port==22
+
+===========================================================
+
+HTTP REQUESTS
+
+GET
+
+http.request.method=="GET"
+
+POST
+
+http.request.method=="POST"
+
+===========================================================
+
+DNS
+
+Show DNS Queries
+
+dns
+
+DNS Name
+
+dns.qry.name
+
+===========================================================
+
+FTP
+
+ftp
+
+Follow TCP Stream
+
+Username
+
+Password
+
+===========================================================
+
+EMAIL
+
+smtp
+
+imap
+
+pop
+
+===========================================================
+
+PING
+
+icmp
+
+===========================================================
+
+ARP
+
+arp
+
+===========================================================
+
+FOLLOW TCP STREAM
+
+Right Click Packet
+
+↓
+
+Follow
+
+↓
+
+TCP Stream
+
+Used To Find
+
+✔ Username
+
+✔ Password
+
+✔ Cookies
+
+✔ Session ID
+
+✔ POST Data
+
+✔ GET Data
+
+✔ Chat
+
+✔ HTML
+
+===========================================================
+
+EXPORT FILES
+
+File
+
+↓
+
+Export Objects
+
+↓
+
+HTTP
+
+↓
+
+Save File
