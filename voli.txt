@@ -1,0 +1,138 @@
+WORKBENCH - https://drive.google.com/file/d/12P0EKrdZAUJECV969RiuAU26ZW_WHkpO/view
+CLI - https://drive.google.com/drive/folders/1qWvfqNbqQD2cq1Au9lMsIrIkrSb5gg_B
+-------------------------
+WORKBENCH PROCESS
+-------------------------
+
+1. Open PassMark Volatility Workbench
+2. File -> Open Memory Image
+3. Select memory.raw / memory.dmp / memory.mem
+4. Run plugins in this order:
+
+windows.info
+windows.pslist
+windows.psscan
+windows.pstree
+windows.cmdline
+windows.filescan
+windows.handles
+windows.envars
+windows.netscan
+windows.malfind
+windows.cmdscan
+windows.consoles
+windows.registry.hivelist
+windows.dlllist
+windows.svcscan
+windows.driverscan
+
+------------------------------------
+VOLATILITY 3 COMMANDS
+------------------------------------
+
+vol.exe -f memory.raw windows.info
+
+vol.exe -f memory.raw windows.pslist
+
+vol.exe -f memory.raw windows.psscan
+
+vol.exe -f memory.raw windows.pstree
+
+vol.exe -f memory.raw windows.cmdline
+
+vol.exe -f memory.raw windows.filescan
+
+vol.exe -f memory.raw windows.handles
+
+vol.exe -f memory.raw windows.envars
+
+vol.exe -f memory.raw windows.netscan
+
+vol.exe -f memory.raw windows.malfind
+
+vol.exe -f memory.raw windows.registry.hivelist
+
+vol.exe -f memory.raw windows.dlllist
+
+vol.exe -f memory.raw windows.driverscan
+
+------------------------------------
+VOLATILITY 2 COMMANDS
+------------------------------------
+
+volatility.exe -f memory.raw imageinfo
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 pslist
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 psscan
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 pstree
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 cmdline
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 filescan
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 handles
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 envars
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 netscan
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 malfind
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 dlllist
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 hivelist
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 printkey
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 svcscan
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 driverscan
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 consoles
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 cmdscan
+
+volatility.exe -f memory.raw --profile=Win7SP1x64 hashdump
+
+------------------------------------
+MOST IMPORTANT PLUGINS
+------------------------------------
+
+windows.info        -> OS Information
+windows.pslist      -> Running Processes
+windows.psscan      -> Hidden/Terminated Processes
+windows.pstree      -> Parent Child Process
+windows.cmdline     -> Executed Command Line
+windows.filescan    -> Open/Deleted Files
+windows.handles     -> Open Handles
+windows.envars      -> Environment Variables
+windows.netscan     -> Network Connections
+windows.malfind     -> Malware Detection
+
+------------------------------------
+EXAM FLOW
+------------------------------------
+
+Open Memory Image
+        ↓
+windows.info
+        ↓
+windows.pslist
+        ↓
+windows.psscan
+        ↓
+windows.pstree
+        ↓
+windows.cmdline
+        ↓
+windows.filescan
+        ↓
+windows.handles
+        ↓
+windows.envars
+        ↓
+windows.netscan
+        ↓
+windows.malfind

@@ -1,0 +1,344 @@
+-----------------------------------------------------------
+FLOW
+-----------------------------------------------------------
+
+registry.ad1 / image
+        ↓
+Open in FTK Imager
+        ↓
+Extract Registry Hive
+        ↓
+NTUSER.DAT / SYSTEM / SOFTWARE / SAM
+        ↓
+Open Registry Explorer
+        ↓
+Analyze Registry
+        ↓
+Submit Answer
+
+===========================================================
+SUPPORTED HIVES
+===========================================================
+
+NTUSER.DAT
+SYSTEM
+SOFTWARE
+SAM
+SECURITY
+UsrClass.dat
+
+===========================================================
+OPEN HIVE
+===========================================================
+
+File
+↓
+
+Open
+
+↓
+
+Select Hive
+
+↓
+
+Registry Tree Opens
+
+===========================================================
+MOST IMPORTANT SEARCHES (Ctrl + F)
+===========================================================
+
+RunMRU
+RecentDocs
+UserAssist
+USBSTOR
+TypedURLs
+Uninstall
+ComputerName
+TimeZoneInformation
+Run
+RunOnce
+
+===========================================================
+COMMON EXAM QUESTIONS
+===========================================================
+
+1. Which command was executed?
+
+Hive:
+NTUSER.DAT
+
+Search:
+RunMRU
+
+-----------------------------------------------------------
+
+2. Which files were opened recently?
+
+Hive:
+NTUSER.DAT
+
+Search:
+RecentDocs
+
+-----------------------------------------------------------
+
+3. Which programs were executed?
+
+Hive:
+NTUSER.DAT
+
+Search:
+UserAssist
+
+-----------------------------------------------------------
+
+4. Which USB device was connected?
+
+Hive:
+SYSTEM
+
+Search:
+USBSTOR
+
+-----------------------------------------------------------
+
+5. Installed Software?
+
+Hive:
+SOFTWARE
+
+Search:
+Uninstall
+
+-----------------------------------------------------------
+
+6. Startup Programs?
+
+Hive:
+NTUSER.DAT
+
+Search:
+Run
+
+RunOnce
+
+-----------------------------------------------------------
+
+7. Computer Name?
+
+Hive:
+SYSTEM
+
+Search:
+ComputerName
+
+-----------------------------------------------------------
+
+8. Time Zone?
+
+Hive:
+SYSTEM
+
+Search:
+TimeZoneInformation
+
+-----------------------------------------------------------
+
+9. Typed URLs?
+
+Hive:
+NTUSER.DAT
+
+Search:
+TypedURLs
+
+-----------------------------------------------------------
+
+10. Last Shutdown?
+
+Hive:
+SYSTEM
+
+Search:
+Windows
+
+Look for:
+ShutdownTime
+
+===========================================================
+WHICH HIVE FOR WHICH QUESTION
+===========================================================
+
+NTUSER.DAT
+
+✔ RecentDocs
+
+✔ RunMRU
+
+✔ UserAssist
+
+✔ TypedURLs
+
+✔ Startup Programs
+
+--------------------------------------
+
+SYSTEM
+
+✔ USB History
+
+✔ Computer Name
+
+✔ Shutdown Time
+
+✔ Time Zone
+
+--------------------------------------
+
+SOFTWARE
+
+✔ Installed Software
+
+✔ Installed Applications
+
+✔ Application Paths
+
+--------------------------------------
+
+SAM
+
+✔ Local Users
+
+✔ RID
+
+✔ User Information
+
+--------------------------------------
+
+SECURITY
+
+✔ Security Policy
+
+===========================================================
+IMPORTANT REGISTRY PATHS
+===========================================================
+
+RunMRU
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+
+-----------------------------------------------------------
+
+RecentDocs
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+
+-----------------------------------------------------------
+
+UserAssist
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist
+
+-----------------------------------------------------------
+
+TypedURLs
+
+Software\Microsoft\Internet Explorer\TypedURLs
+
+-----------------------------------------------------------
+
+Startup
+
+Software\Microsoft\Windows\CurrentVersion\Run
+
+Software\Microsoft\Windows\CurrentVersion\RunOnce
+
+-----------------------------------------------------------
+
+USB History
+
+CurrentControlSet\Enum\USBSTOR
+
+-----------------------------------------------------------
+
+Computer Name
+
+CurrentControlSet\Control\ComputerName\ComputerName
+
+-----------------------------------------------------------
+
+Installed Software
+
+Microsoft\Windows\CurrentVersion\Uninstall
+
+-----------------------------------------------------------
+
+Time Zone
+
+CurrentControlSet\Control\TimeZoneInformation
+
+@@@@@@@@@@@
+
+Automatic Registry Artifact Extraction ripper
+rip Dow- https://drive.google.com/drive/folders/1qWvfqNbqQD2cq1Au9lMsIrIkrSb5gg_B  
+===========================================================
+
+FLOW
+
+Registry.ad1
+
+↓
+
+FTK Imager
+
+↓
+
+Extract Hive
+
+↓
+
+NTUSER.DAT
+SYSTEM
+SOFTWARE
+SAM
+
+↓
+
+Open RegRipper GUI
+
+↓
+
+Hive File
+
+↓
+
+Browse
+
+↓
+
+Select Hive
+
+↓
+
+Report File
+
+↓
+
+report.txt
+
+↓
+
+Rip!
+
+↓
+
+Open report.txt
+
+↓
+
+Ctrl + F
+
+↓
+
+Search Answer
