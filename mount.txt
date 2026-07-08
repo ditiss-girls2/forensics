@@ -1,0 +1,58 @@
+===========================================
+WINDOWS - MOUNT IMAGE (.IMG) USING OSFMOUNT
+===========================================
+
+Tool Required:
+- OSFMount
+
+Steps:
+
+1. Open OSFMount as Administrator.
+
+2. Click "Mount New".
+
+3. Click Browse and select the image file.
+   Example:
+   image1.img
+
+4. Click Next.
+
+5. Select the partition (if more than one partition is present).
+
+6. Select:
+   ✔ Mount entire image as virtual disk
+   ✔ Read-only (Recommended for forensic analysis)
+
+7. Assign a Drive Letter.
+   Example:
+   E:
+   F:
+   G:
+
+8. Click Mount.
+
+9. Open File Explorer (This PC).
+
+10. Open the newly created drive.
+    Example:
+    E:\
+
+11. Browse the filesystem.
+
+12. Locate the required file.
+    Example:
+    secret.txt
+    or
+    secret1.txt
+
+13. Open the file.
+
+14. Read the secret.
+
+15. Copy or Export the file if required.
+
+16. After analysis, go back to OSFMount.
+
+17. Select the mounted drive.
+
+18. Click Dismount.
